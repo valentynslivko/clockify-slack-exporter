@@ -1,0 +1,7 @@
+python-dotenv
+pydantic
+arrow
+fastapi==0.90.0
+slack_sdk
+httpx
+uvicorn

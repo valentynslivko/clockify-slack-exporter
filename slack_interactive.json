@@ -1,0 +1,185 @@
+{
+    "type": "block_actions",
+    "user": {
+        "id": "U040J3ST64V",
+        "username": "valentyn.slyvko",
+        "name": "valentyn.slyvko",
+        "team_id": "T0400FDAAKG"
+    },
+    "api_app_id": "A0523T0T8AH",
+    "token": "RvtDlLGjnKeEFmd5MgeiHo7P",
+    "container": {
+        "type": "message",
+        "message_ts": "1712827763.572719",
+        "channel_id": "D0544GF5C56",
+        "is_ephemeral": false
+    },
+    "trigger_id": "6959095764945.4000523350662.58995d39787f4f42e461daa5fc12a949",
+    "team": {
+        "id": "T0400FDAAKG",
+        "domain": "meduzzen"
+    },
+    "enterprise": null,
+    "is_enterprise_install": false,
+    "channel": {
+        "id": "D0544GF5C56",
+        "name": "directmessage"
+    },
+    "message": {
+        "user": "U05309M9QA3",
+        "type": "message",
+        "ts": "1712827763.572719",
+        "bot_id": "B053HA7AGKW",
+        "app_id": "A0523T0T8AH",
+        "text": "Select+customer+Submit+dates+button,+with+interactive+elements",
+        "team": "T0400FDAAKG",
+        "blocks": [
+            {
+                "type": "input",
+                "block_id": "0xrfW",
+                "label": {
+                    "type": "plain_text",
+                    "text": "Date+from",
+                    "emoji": true
+                },
+                "optional": false,
+                "dispatch_action": false,
+                "element": {
+                    "type": "datepicker",
+                    "action_id": "datepicker-action",
+                    "initial_date": "2024-04-11",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select+a+date",
+                        "emoji": true
+                    }
+                }
+            },
+            {
+                "type": "input",
+                "block_id": "+nIqS",
+                "label": {
+                    "type": "plain_text",
+                    "text": "Date+until",
+                    "emoji": true
+                },
+                "optional": false,
+                "dispatch_action": false,
+                "element": {
+                    "type": "datepicker",
+                    "action_id": "datepicker-action",
+                    "initial_date": "2024-04-01",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select+a+date",
+                        "emoji": true
+                    }
+                }
+            },
+            {
+                "type": "section",
+                "block_id": "OboOz",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "Select+customer",
+                    "verbatim": false
+                },
+                "accessory": {
+                    "type": "static_select",
+                    "action_id": "static_select-action",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select+project",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "Stefan",
+                                "emoji": true
+                            },
+                            "value": "Stefan"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "Filip+and+Pavel",
+                                "emoji": true
+                            },
+                            "value": "Filip+and+Pavel"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "TraverseAI",
+                                "emoji": true
+                            },
+                            "value": "traverse"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "actions",
+                "block_id": "21e4y",
+                "elements": [
+                    {
+                        "type": "button",
+                        "action_id": "submit",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "Submit+dates",
+                            "emoji": true
+                        },
+                        "value": "submit_dates"
+                    }
+                ]
+            }
+        ]
+    },
+    "state": {
+        "values": {
+            "0xrfW": {
+                "datepicker-action": {
+                    "type": "datepicker",
+                    "selected_date": "2024-04-11"
+                }
+            },
+            "+nIqS": {
+                "datepicker-action": {
+                    "type": "datepicker",
+                    "selected_date": "2024-03-14"
+                }
+            },
+            "OboOz": {
+                "static_select-action": {
+                    "type": "static_select",
+                    "selected_option": {
+                        "text": {
+                            "type": "plain_text",
+                            "text": "TraverseAI",
+                            "emoji": true
+                        },
+                        "value": "traverse"
+                    }
+                }
+            }
+        }
+    },
+    "response_url": "https://hooks.slack.com/actions/T0400FDAAKG/6943516724549/dIbwT2QAxZA8eoJWwz3Hlc5e",
+    "actions": [
+        {
+            "action_id": "submit",
+            "block_id": "21e4y",
+            "text": {
+                "type": "plain_text",
+                "text": "Submit+dates",
+                "emoji": true
+            },
+            "value": "submit_dates",
+            "type": "button",
+            "action_ts": "1712827771.396655"
+        }
+    ]
+}
